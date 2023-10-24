@@ -16,5 +16,5 @@ _5、连接到主机-选择刚才输入的ip地址-在新窗口中输入用户�
 八、配置密钥实现免密登陆  
 _1、windows>ssh-keygen -t rsa -C "xxx@xxx.com"（生成公钥文件-id_rsa.pub，私钥文件-id_rsa)  
 _2、将公钥文件复制到liunx中（可以直接复制，可以使用scp命令-格式：scp id_rsa.pub的绝对路径 username@ip地址：路径）  
-_3、liunx>ssh-keygen -t rsa -C "xxx@xxx.com" (xxx@xxx.com要和windows上的一致) 
+_3、liunx>ssh-keygen -t rsa -C "xxx@xxx.com" (xxx@xxx.com要和windows上的一致)   
 _4、liunx>cat id_rsa.pub >> ~/.ssh/authorized_keys
