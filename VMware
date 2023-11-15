@@ -2,6 +2,6 @@
 挂载操作 具体命令如下: 
 sudo mount -t fuse.vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other 
 将挂载设为自启： 
-vim /etc/fstab
+sudo vim /etc/fstab
 在最后一行加入: 
 .host:/   /mnt/hgfs   fuse.vmhgfs-fuse   defaults,allow_other   0   0 
