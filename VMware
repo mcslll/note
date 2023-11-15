@@ -1,5 +1,5 @@
 主机与VMware虚拟机共享文件夹：解决虚拟机找不到共享文件夹问题 
 挂载操作 具体命令如下: 
 sudo mount -t fuse.vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other 
-cd /mnt/hgfs 
-ls
+将挂载设为自启 
+.host:/   /mnt/hgfs   fuse.vmhgfs-fuse   defaults,allow_other   0   0 
